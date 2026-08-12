@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const navItems = [
   "Home",
@@ -71,7 +72,7 @@ const Navbar = () => {
             className="btn btn-ghost btn-circle hidden sm:flex"
             aria-label="GitHub"
           >
-            <span className="text-sm font-black">GH</span>
+            <span className="text-sm font-black"><FaGithub  className="text-xl"/></span>
           </a>
 
           {/* LinkedIn */}
@@ -82,7 +83,7 @@ const Navbar = () => {
             className="btn btn-ghost btn-circle hidden sm:flex"
             aria-label="LinkedIn"
           >
-            <span className="text-sm font-black">in</span>
+            <span className="text-sm font-black"><FaLinkedin  className="text-xl"/></span>
           </a>
 
           {/* Theme Toggle */}

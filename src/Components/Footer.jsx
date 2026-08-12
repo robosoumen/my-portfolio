@@ -1,3 +1,6 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
 const Footer = () => {
   return (
     <footer className="bg-base-300 text-base-content">
@@ -54,10 +57,10 @@ const Footer = () => {
 
             <div className="flex gap-4">
               <a
-                href="mailto:soumenbera211@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=soumenbera211@gmail.com"
                 className="hover:text-primary transition"
               >
-                Email
+                <SiGmail />
               </a>
 
               <a
@@ -66,7 +69,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:text-primary transition"
               >
-                GitHub
+                <FaGithub />
               </a>
 
               <a
@@ -75,7 +78,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:text-primary transition"
               >
-                LinkedIn
+                <FaLinkedin />
               </a>
             </div>
           </div>

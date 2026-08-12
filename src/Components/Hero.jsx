@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 const Hero = () => {
   return (
     <section
@@ -64,7 +66,7 @@ const Hero = () => {
               className="btn btn-circle btn-outline font-bold"
               aria-label="GitHub"
             >
-              GH
+              <FaGithub />
             </a>
 
             <a
@@ -74,7 +76,7 @@ const Hero = () => {
               className="btn btn-circle btn-outline font-bold"
               aria-label="LinkedIn"
             >
-              in
+              <FaLinkedin />
             </a>
 
           </div>

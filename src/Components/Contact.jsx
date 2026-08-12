@@ -1,3 +1,5 @@
+import { FaGithub } from "react-icons/fa";
+
 const Contact = () => {
   return (
     <section id="contact" className="bg-base-100 px-6 py-24 md:py-32">
@@ -32,7 +34,7 @@ const Contact = () => {
             <div className="mt-8 space-y-5">
               {/* Email */}
               <a
-                href="mailto:YOUR_EMAIL@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=soumenbera211@gmail.com"
                 className="flex items-center gap-4 rounded-2xl border border-base-300 bg-base-100 p-4 transition hover:border-primary"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-xl">
@@ -72,7 +74,7 @@ const Contact = () => {
                 className="flex items-center gap-4 rounded-2xl border border-base-300 bg-base-100 p-4 transition hover:border-primary"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-xl">
-                  Git
+                  <FaGithub />
                 </div>
 
                 <div>
