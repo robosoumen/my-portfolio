@@ -103,7 +103,7 @@ const Contact = () => {
 
             {/* Resume */}
             <a
-              href="/resume.pdf"
+              href="/soumen_bera_resume.pdf"
               download
               className="btn mt-8 w-fit border-none bg-base-100 px-6 text-base-content hover:bg-base-200"
             >

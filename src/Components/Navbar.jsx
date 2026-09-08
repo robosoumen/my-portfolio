@@ -92,7 +92,7 @@ const Navbar = () => {
             className="btn btn-ghost btn-circle text-lg"
             aria-label="Toggle theme"
           >
-            {theme === "dark" ? "☀️" : "🌙"}
+            {theme === "dark" ? "🌙" : "☀️"}
           </button>
 
           {/* Mobile Menu */}

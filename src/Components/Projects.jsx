@@ -1,77 +1,75 @@
-import zapImg from '../assets/projects/zapshift.png'
-import foodImg from '../assets/projects/food-lover.png'
-import toyImg from '../assets/projects/toy-universe.png'
-
+import zapImg from "../assets/projects/zapshift.png";
+import foodImg from "../assets/projects/food-lover.png";
+import toyImg from "../assets/projects/toy-universe.png";
+import scholarHub from "../assets/projects/scholarHub.png";
 
 const Projects = () => {
   const projects = [
-  {
-    title: "ZapShift",
-    category: "Full Stack MERN Application",
-    description:
-      "A full-stack parcel delivery and management platform with user authentication, parcel management, payment integration and role-based functionality.",
-    image: zapImg,
-    live: "https://recap-zap-shift.web.app/",
-    client:
-      "https://github.com/robosoumen/recap-zap-shift-client",
-    server:
-      "https://github.com/robosoumen/recap-two-zap-shift-server",
-    technologies: [
-      "React",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Firebase",
-      "Stripe",
-    ],
-  },
+    {
+      title: "ZapShift",
+      category: "Multi-Role Parcel Delivery Management System",
+      description:
+        "A full-stack parcel delivery and management platform with user authentication, parcel management, payment integration and role-based functionality.",
+      image: zapImg,
+      live: "https://recap-zap-shift.web.app/",
+      client: "https://github.com/robosoumen/recap-zap-shift-client",
+      server: "https://github.com/robosoumen/recap-two-zap-shift-server",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Firebase",
+        "Stripe",
+      ],
+    },
+    {
+      title: "ScholarHub",
+      category: "Full-Stack Scholarship Management Platform",
+      description:
+        "Developed a role-based scholarship management platform with separate Student, Moderator, and Admin dashboards. Implemented Firebase Authentication, JWT-based authorization, MongoDB data management, scholarship applications, application reviews, status tracking, and Stripe Checkout for secure payments.",
+      image: scholarHub,
+      live: "https://scholarhub-2026.web.app/",
+      client: "https://github.com/robosoumen/scholarhub",
+      server: "https://github.com/robosoumen/scholarhub-server",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Firebase",
+        "Stripe",
+      ],
+    },
 
-  {
-    title: "Local Food Lover Network",
-    category: "Full Stack MERN Application",
-    description:
-      "A food-focused social platform where users can explore, share and interact with food-related content through a modern responsive interface.",
-    image: foodImg,
-    live: "https://assignment-ten-ec1b2.web.app/",
-    client:
-      "https://github.com/robosoumen/Assignment-client-10",
-    server:
-      "https://github.com/robosoumen/Assignment-server-10",
-    technologies: [
-      "React",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Firebase",
-    ],
-  },
+    {
+      title: "Local Food Lover Network",
+      category: "Full Stack MERN Application",
+      description:
+        "A food-focused social platform where users can explore, share and interact with food-related content through a modern responsive interface.",
+      image: foodImg,
+      live: "https://assignment-ten-ec1b2.web.app/",
+      client: "https://github.com/robosoumen/Assignment-client-10",
+      server: "https://github.com/robosoumen/Assignment-server-10",
+      technologies: ["React", "Node.js", "Express.js", "MongoDB", "Firebase"],
+    },
 
-  {
-    title: "Toy Universe",
-    category: "Frontend Web Application",
-    description:
-      "A responsive toy marketplace interface where users can explore different toys and browse product information through a clean and user-friendly design.",
-    image: toyImg,
-    live: "https://toy-universe-37ba3.web.app/",
-    client:
-      "https://github.com/robosoumen/toy-universe",
-    server: null,
-    technologies: [
-      "React",
-      "JavaScript",
-      "Tailwind CSS",
-      "Firebase",
-    ],
-  },
-];
+    {
+      title: "Toy Universe",
+      category: "Frontend Web Application",
+      description:
+        "A responsive toy marketplace interface where users can explore different toys and browse product information through a clean and user-friendly design.",
+      image: toyImg,
+      live: "https://toy-universe-37ba3.web.app/",
+      client: "https://github.com/robosoumen/toy-universe",
+      server: null,
+      technologies: ["React", "JavaScript", "Tailwind CSS", "Firebase"],
+    },
+  ];
 
   return (
-    <section
-      id="projects"
-      className="bg-base-200 px-6 py-24 md:py-32"
-    >
+    <section id="projects" className="bg-base-200 px-6 py-24 md:py-32">
       <div className="container mx-auto">
-
         {/* Heading */}
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <p className="font-semibold uppercase tracking-[0.25em] text-primary">
@@ -83,20 +81,18 @@ const Projects = () => {
           </h2>
 
           <p className="mt-5 leading-7 text-base-content/60">
-            A selection of projects I have built while developing
-            my full-stack web development skills.
+            A selection of projects I have built while developing my full-stack
+            web development skills.
           </p>
         </div>
 
         {/* Projects */}
         <div className="grid gap-8 lg:grid-cols-2">
-
           {projects.map((project) => (
             <article
               key={project.title}
               className="group overflow-hidden rounded-3xl border border-base-300 bg-base-100 shadow-xl transition duration-300 hover:-translate-y-2 hover:border-primary"
             >
-
               {/* Screenshot */}
               <div className="relative overflow-hidden bg-base-300">
                 <img
@@ -116,10 +112,7 @@ const Projects = () => {
 
               {/* Content */}
               <div className="p-6 md:p-7">
-
-                <h3 className="text-2xl font-black">
-                  {project.title}
-                </h3>
+                <h3 className="text-2xl font-black">{project.title}</h3>
 
                 <p className="mt-4 leading-7 text-base-content/65">
                   {project.description}
@@ -139,7 +132,6 @@ const Projects = () => {
 
                 {/* Links */}
                 <div className="mt-7 flex flex-wrap gap-3">
-
                   <a
                     href={project.live}
                     target="_blank"
@@ -168,12 +160,10 @@ const Projects = () => {
                       Server ↗
                     </a>
                   )}
-
                 </div>
               </div>
             </article>
           ))}
-
         </div>
       </div>
     </section>
